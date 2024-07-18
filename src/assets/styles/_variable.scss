@@ -1,0 +1,41 @@
+/* Defining the breakpoints for the media queries. */
+$mediaSizes: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+);
+
+/* Defining the colors that will be used in the project. */
+$primary: #10163a;
+$primaryHover: #939aac;
+$white: #ffffff;
+$black: #000000;
+$purple: #7367f0;
+$purple-light: #f0efff;
+$blue: #86b7fe;
+$grey: #b0b0b0;
+$grey-1: #b5b5b5;
+$inValidRed: #dc3545;
+$card-blue: #57a5ff;
+$card-green: #47ddbf;
+$card-yellow: #fcc168;
+$card-pink: #f97088;
+$border: #ebe9f1;
+$sidebar-active: rgb(235 236 237 / 15%);
+$datatable-pagination: #333;
+
+$box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+
+//Font Family
+$PrimaryFont: 'ZignutsPopins';
+
+/* A mixin that is used to hide data. */
+@mixin hideData {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+}

@@ -1,0 +1,29 @@
+/* Implement spinner design in this file  */
+
+.loader-section {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba($primary, 0.3);
+  z-index: 999;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 9px solid;
+  border-color: #283046 #0000;
+  animation: spinner-0tkp9a 1s infinite;
+}
+
+@keyframes spinner-0tkp9a {
+  to {
+    transform: rotate(0.5turn);
+  }
+}

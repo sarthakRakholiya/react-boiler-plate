@@ -1,0 +1,21 @@
+/**Profile page design **/
+
+@import './variable';
+
+.profile-card {
+  padding: 30px;
+  .card-header {
+    border-bottom: none;
+    background-color: $white;
+    h3 {
+      text-align: center;
+    }
+  }
+  .profile-image {
+    width: 100px;
+    img {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}

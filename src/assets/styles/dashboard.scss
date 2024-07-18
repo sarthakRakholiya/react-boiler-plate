@@ -1,0 +1,60 @@
+/** Dashboard design */
+
+@import './variable';
+
+.dashboard-count {
+  padding: 40px 40px;
+  color: $purple-light;
+  &.color-blue {
+    background-color: $card-blue !important;
+  }
+
+  &.color-green {
+    background-color: $card-green !important;
+  }
+  &.color-yellow {
+    background-color: $card-yellow !important;
+  }
+  &.color-pink {
+    background-color: $card-pink !important;
+  }
+  box-shadow: none !important;
+  border: none !important;
+  .count-div {
+    h2 {
+      text-align: center;
+      margin: 0;
+    }
+    p {
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+.piechart {
+  height: 100%;
+}
+.chart-card {
+  padding: 15px 30px;
+  .card-header {
+    background-color: $white;
+    border: none;
+  }
+}
+
+.shimmer {
+  &.h200 {
+    height: 200px !important;
+  }
+  &.h600 {
+    height: 600px !important;
+    background-size: 4000px 600px !important;
+  }
+  &.h470 {
+    height: 470px !important;
+    background-size: 4000px 600px !important;
+  }
+  &.br8 {
+    border-radius: 6px !important;
+  }
+}

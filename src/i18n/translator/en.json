@@ -1,0 +1,32 @@
+{
+  "title": {
+    "headerTitle": "Header",
+    "sectionTitle": "Section",
+    "footerTitle": "Footer"
+  },
+  "errorMessage": {
+    "internalServerError": "Something went wrong!"
+  },
+  "successMessage": {
+    "loginSuccess": "Welcome 👋, Login successfull...",
+    "logoutSuccess": "Good Bye 😊, Logout successfull...",
+    "changePasswordSuccess": "😎 Password changed successfull...",
+    "editUserSuccess": "😄 User updated successfull...",
+    "addUserSuccess": "😉 User added successfull...",
+    "deleteUserSuccess": "🤨 User deleted successfull..."
+  },
+  "validationMesssage": {
+    "emailRequired": "Please enter email.",
+    "emailValid": "Please enter valid email.",
+    "passwordRequired": "Please enter password.",
+    "passwordMaxCharacter": "Please enter maximum 32 characters.",
+    "passwordMinCharacter": "Please enter minimum 8 characters.",
+    "passwordValid": "Password require at least one uppercase character, one lowercase character, one number and one special(@$!%*?&) character.",
+    "currentPasswordRequired": "Please enter current password.",
+    "confirmPasswordRequired": "Please enter confirm password.",
+    "confirmPasswordValid": "New password and confirm password should be match.",
+    "userNameRequired": "Please enter your full name",
+    "userDesigRequired": "Please enter your designation",
+    "userPerUserRequired": "Please enter your uses"
+  }
+}

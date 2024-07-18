@@ -1,0 +1,237 @@
+/** Globle css file**/
+
+@import './variable';
+@import './font';
+@import './authentication.scss';
+@import './dashboard.scss';
+@import './sidebar.scss';
+@import './spinner.scss';
+@import './dataTable.scss';
+@import './profile.scss';
+@import 'react-perfect-scrollbar/dist/css/styles.css';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $PrimaryFont, sans-serif !important;
+  color: $black;
+  background-color: #f8f8f8 !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 75px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 52px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.form-label {
+  font-size: 14px;
+}
+
+.hide-data-line-1 {
+  @include hideData;
+  -webkit-line-clamp: 1 !important;
+}
+
+.hide-data-line-2 {
+  @include hideData;
+  -webkit-line-clamp: 2 !important;
+}
+
+.hide-data-line-3 {
+  @include hideData;
+  -webkit-line-clamp: 3 !important;
+}
+
+// React select
+.select__control {
+  border: 1px solid $primary;
+  border-radius: 8px !important;
+  min-height: 40px;
+  position: relative;
+  box-shadow: none;
+  &:hover {
+    border-color: $primary;
+  }
+  &.select__control--is-focused {
+    border-color: $primary;
+  }
+
+  &.select__control--menu-is-open {
+    box-shadow: none;
+    border-color: $primary;
+  }
+  .select__value-container {
+    padding: 2px 0 !important;
+  }
+  .select__placeholder {
+    color: $primary;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 4px 15px;
+  }
+  .select__single-value,
+  .select__input-container {
+    color: $primary;
+    font-weight: 300;
+    padding: 4px 15px;
+    font-size: 14px;
+    color: $black;
+  }
+}
+
+.btn.btn-primary {
+  border-color: $primary;
+  background: $primary;
+  &:hover {
+    background: $primary;
+    border-color: $primaryHover;
+  }
+}
+
+.form-control {
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &.form-control-lg {
+    background-color: $white !important;
+    padding: 8px 15px !important;
+    box-shadow: none !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    line-height: 22px !important;
+    &:focus {
+      border: 1px solid $black !important;
+      ~ .input-group-text {
+        border: 1px solid $black !important;
+      }
+    }
+    &::placeholder {
+      color: $black !important;
+      font-weight: 300 !important;
+      font-size: 14px !important;
+      line-height: 22px !important;
+    }
+  }
+
+  border-radius: 8px !important;
+  background-color: $purple-light !important;
+  padding: 20px !important;
+  border: 1px solid $purple-light !important;
+  box-shadow: none !important;
+  transition: 0.2s ease-in-out;
+  &::placeholder {
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 22px !important;
+    color: $purple !important;
+  }
+  &:focus {
+    border-color: $purple !important;
+  }
+  &.is-invalid {
+    border-color: $inValidRed !important;
+    &:focus {
+      box-shadow: none !important;
+      border-color: $inValidRed !important;
+    }
+    &::placeholder {
+      color: $inValidRed !important;
+    }
+  }
+}
+
+.is-invalid ~ .invalid-feedback {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.input-group {
+  &.input-group-md {
+    .form-control {
+      background-color: $white !important;
+      padding: 10px 15px !important;
+      box-shadow: none !important;
+      &:focus {
+        border: 1px solid $black !important;
+        border-right: 0 !important;
+        ~ .input-group-text {
+          border: 1px solid $black !important;
+        }
+      }
+      &::placeholder {
+        color: $black !important;
+        font-weight: 300 !important;
+        font-size: 14px !important;
+        line-height: 22px !important;
+      }
+    }
+    .input-group-text {
+      background-color: $white !important;
+    }
+  }
+  .form-control {
+    border-radius: 8px 0 0 8px !important;
+    border-right: 0 !important;
+    &:focus ~ .input-group-text {
+      border: 1px solid $purple !important;
+    }
+    &.is-invalid ~ .input-group-text {
+      border: 1px solid $inValidRed !important;
+    }
+    &.is-invalid {
+      &::placeholder {
+        color: $inValidRed !important;
+      }
+    }
+  }
+  .input-group-text {
+    border-radius: 0 8px 8px 0 !important;
+    background-color: $purple-light !important;
+    border: 1px solid $purple-light !important;
+    border-left: 0 !important;
+    transition: 0.2s ease-in-out;
+    svg {
+      width: 18px;
+    }
+  }
+}
+
+.change-pass-section
+{
+  justify-content: center;
+  display: flex;
+}
+
+.password-requirement
+{
+  line-height: 1.6;
+  font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.padding-custom
+{
+  padding-bottom: 7px;
+}
+
+.text-align-right
+{
+  text-align: right;
+}
